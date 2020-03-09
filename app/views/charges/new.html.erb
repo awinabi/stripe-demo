@@ -1,0 +1,8 @@
+
+<%=form_with url:charges_path, local:true do |f|%>
+  <%= f.submit 'submit', id:"my_id", 'data-myvalue'=> "callMethod(#{@checkout_session.id})" %>
+<%end%>
+
+
+
+
